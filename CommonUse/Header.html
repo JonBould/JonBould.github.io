@@ -1,0 +1,22 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <link rel="icon" href="Images/Logos/favicon.ico" type="image/icon"/>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="DesktopStyleSheet.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="MobileStyleSheet.css">
+    <link rel="icon" href="Images/Logos/favicon.ico" type="image/icon"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <img id="LogoBanner" class="banner" src="Images/Logos/Banner.png">
+    <img id="MenuButton" src="Images/Icons/menu.png" alt="" onclick="OpenMenu(this)">
+
+
+    <script>
+        function OpenMenu(){
+            var menu = document.getElementById("NavigationContainer");
+            menu.style.height = "100%";
+            document.body.style.overflow = "hidden";
+        }
+    </script>
+    
+</body>

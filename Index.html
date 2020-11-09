@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Simple Prints 3D</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+<body>
+    <!-- NAV BAR-->
+    <aside>
+        <Nav id="NavBar" class="sideNav"></Nav>
+    </aside>
+
+    <!-- everything that isn't the navigation bar-->
+    <div id="SiteContainer">
+        <!-- Top Banner -->
+        <header id="Header"></header>
+
+        
+
+        <!-- Main Body -->
+        <div>
+            <!-- Welcome Message-->
+            <div id="Welcome" class="infoBox">
+                <h3> Welcome to Simple Prints 3D</h3>
+                <h4> Make your ideas a reality. Perfect for custom pieces, prototypes and display models. </h4>
+                <h4> Simple Prints 3D provide a custom printing service that keeps it simple for you. </h4>
+                <h4>Print on Demand, Design & Advice services available.</h4>
+            </div>
+            
+            <div id="ModelInfo" class="infoBox">
+                <img id="modelIcon" class="Icon" src="Images/Icons/cube.png">
+                <h2>1 - Model</h2>
+                <p> Upload your file with your enquiry form so we can check it out (.stl files are perfect) <p>
+                <p> Or if you're looking for us to design your model upload any supporting design documents/ideas </p>
+            </div>
+
+            <div id="MaterialInfo" class="infoBox">
+                <img id="materialIcon" class="Icon" src="Images/Icons/spool.png">
+                <h2>2 - Material</h2>
+                <p> We currently stock PLA & PETG.</p>
+                <p> Other material & colours can be brought in per request, or let us know if you're unsure on what material would be best </p>
+            </div>
+
+            <div id="FinishInfo" class="infoBox">
+                <img id="FinishIcon" class="Icon" src="Images/Icons/hotend.png">
+                <h2>3 - Application/Finish Quality</h2>
+                <p>For some parts aesthetics are the main priority, for others it doesn't matter at all.</p>
+                <p>Therefore, providing us with what quality you would like will allow us to tune your print correctly</p>
+            </div>
+        </div>
+
+
+        <footer id="Footer"></footer>
+        
+        <script> 
+            $(function(){
+              $("#Header").load("CommonUse/Header.html"); 
+              $("#Footer").load("CommonUse/Footer.html");
+              $("#NavBar").load("CommonUse/NavBar.html");
+            });
+        </script> 
+    </div>
+
+</body>
+</html>

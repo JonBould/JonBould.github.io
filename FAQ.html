@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+<body>
+    <title>FAQ - Simple Prints 3D</title>
+
+    <!-- NAV BAR-->
+    <aside>
+        <Nav id="NavBar" class="sideNav"></Nav>
+    </aside>
+
+    <!-- everything that isn't the navigation bar-->
+    <div id="SiteContainer">
+            <!-- Top Banner -->
+        <header id="Header"></header>
+
+        <h1>FAQs</h1>
+        <!-- Main Body -->
+        <button class="RevealButton" onclick="Reveal(howItWorks)"><p>What is it & How Does it Work? </p><img class="ButtonIcon" src="images/Icons/drop.png" alt=""></button>
+        <div id="howItWorks" class="infoBox" style="display: none;">
+            <img id="questionlIcon" class="MediumIcon" src="Images/Icons/questionMark.png">
+            <p class="faqP"> 3D printing is a modern production process that builds a three dimensional object from a CAD (Computer Aided Design) file. </p>
+            <p class="faqP"> The most common method, and the method that we use, is called Fused Deposition Modelling (or FDM).
+                    This method stacks layers of material on top of one another at a high temperature so that the material bonds and forms a complete object. </p>
+        </div>
+
+        <button class="RevealButton" onclick="Reveal(material)"><p>What Material Can You Print?</p> <img class="ButtonIcon" src="images/Icons/drop.png" alt=""></button>
+        <div id="material" class="infoBox" style="display: none;">
+            <img id="materialIcon" class="MediumIcon" src="Images/Icons/questionMark.png">
+            <p class="faqP"> We currently stock PLA and PETG which are both great materials to print with that allow for a wide range of uses. </p>
+            <p class="faqP">PETG is very durable, more flexible but also a little softer. It is also very strong and has great chemical resistance.
+                It is also slightly more expensive than PLA. PLA is slightly easier to print with especially for complex prints that require supports as they will be easier to remove in post.
+                However PLA can break down in sunlight as it is biodegradable. </p>
+            <p class="faqP"> In short, PLA is a great all rounder, however, if durability is the priority PETG is probably best for you.</p>
+        </div>
+
+        <button class="RevealButton" onclick="Reveal(howLarge)"><p>How Large Can You Print?</p> <img class="ButtonIcon" src="images/Icons/drop.png" alt=""></button>
+        <div id="howLarge" class="infoBox" style="display: none;">
+            <img id="pluslIcon" class="MediumIcon" src="Images/Icons/plus.png">
+            <p class="faqP"> We can currently print objects up to 220 x 220 x 250mm. </p>
+            <p class="faqP"> However we can split objects up into multiple prints to be assembled afterwards. </p>
+        </div>
+
+        <button class="RevealButton" onclick="Reveal(howLong)"><p>How Long Does it Take?</p> <img class="ButtonIcon" src="images/Icons/drop.png" alt=""></button>
+        <div id="howLong" class="infoBox" style="display: none;">
+            <img id="pluslIcon" class="MediumIcon" src="Images/Icons/clock.png">
+            <p class="faqP"> A common misconception with 3D printing is that it is extremely fast. The speed of printing is dependent on the size, complexity and required finish of your print.
+                However, for a single production the process is much quicker than alternative productions. </p>
+            <p class="faqP"> We hope to have your print with you within a week, however express service can be discussed. </p>
+        </div>
+
+        <button class="RevealButton" onclick="Reveal(howMuch)"><p>How Much Does it Cost?</p> <img class="ButtonIcon" src="images/Icons/drop.png" alt=""></button>
+        <div id="howMuch" class="infoBox" style="display: none;">
+            <img id="poundIcon" class="MediumIcon" src="Images/Icons/pound.png">
+            <p class="faqP"> Quotes are calculated on a model to model basis, which considers material, time of print and complexity (as print failures must be kept in mind for complex prints). </p>
+        </div>
+
+        <div id="Disclaimer" class="infoBox" style="background-color: black; margin: auto; margin-top: 50px;" >
+            <h2>Disclaimer</h2>
+            <p> Lead times are estimated and may be longer if there are unforeseen print issues (e.g. power outage). </p>
+            <p> SIMPLE PRINTS 3D are not responsible for the use and/or performance of any object. </p>
+            <p> SIMPLE PRINTS 3D are not responsible for the source of model files given by the customer and will assume that all files are owned by said customer. </p>
+        </div>
+
+        <footer id="Footer"></footer>
+    </div>
+
+    <script> 
+        $(function(){
+          $("#Header").load("CommonUse/Header.html"); 
+          $("#Footer").load("CommonUse/Footer.html");
+          $("#NavBar").load("CommonUse/NavBar.html");
+        });
+    </script>
+    <script>
+        function Reveal(section){
+            if (section.style.display === "none") {
+                section.style.display = "block";
+                section.scrollIntoView();
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

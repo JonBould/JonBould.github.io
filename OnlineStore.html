@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="StyleSheet.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+<body>
+    <title>Online Store - Simple Prints 3D</title>
+
+    <!-- NAV BAR-->
+    <aside>
+        <Nav id="NavBar" class="sideNav"></Nav>
+    </aside>
+
+    <!-- everything that isn't the navigation bar-->
+    <div id="SiteContainer">
+        <div id="storePage">
+                <!-- Top Banner -->
+            <header id="Header"></header>
+
+            <h1>Online Store</h1>
+            <h2 class="StoreNotif">FREE UK Delivery</h2>
+            <h2 class="StoreNotif">£6 International Delivery.</h2>
+            <!-- Main Body -->
+                <div id="store"></div>
+                    <div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?18918032&data_platform=code" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("id=my-store-18918032");</script>
+                </div>
+        </div>
+
+        <footer id="Footer"></footer>
+    </div>
+
+    <script> 
+        $(function(){
+          $("#Header").load("CommonUse/Header.html"); 
+          $("#Footer").load("CommonUse/Footer.html");
+          $("#NavBar").load("CommonUse/NavBar.html");
+          
+        });
+    </script> 
+</body>
+</html>

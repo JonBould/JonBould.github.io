@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+<body>
+    <title>Contact - Simple Prints 3D</title>
+
+    <!-- NAV BAR-->
+    <aside>
+        <Nav id="NavBar" class="sideNav"></Nav>
+    </aside>
+
+    <!-- everything that isn't the navigation bar-->
+    <div id="SiteContainer">
+            <!-- Top Banner -->
+        <header id="Header"></header>
+
+        <h1>Contact Us</h1>
+        <!-- Main Body -->
+        <div id="contactContainer">
+            <a id="mailBlock" class="ContactBlock" href="mailto:simpleprints3d@gmail.com">
+                <div>
+                    <img id="mailIcon" class="ContactIcon" src="Images/Icons/paperPlane.png">
+                    <h4 class="linkText"> simpleprints3d@gmail.com</h4>
+                </div>
+            </a>
+            <a id="phoneBlock" class="ContactBlock" href="https://wa.link/okr156">
+                <div>
+                    <img id="phoneIcon" class="ContactIcon" src="Images/Icons/mobile.png">
+                    <h4 class="linkText"> Call or Text us: 07726843993 or click to whatsapp us</h4>
+                </div>
+            </a>
+            <a id="facebookBlock" class="ContactBlock" href="https://www.facebook.com/Simple-Prints-3D-108516883919753">
+                <div>
+                    <img id="facebookIcon" class="ContactIcon" src="Images/Icons/fbook.png">
+                    <h4 class="linkText"> Find us on facebook</h4>
+                </div>
+            </a>
+        </div>
+
+        <footer id="Footer"></footer>
+    </div>
+
+    <script> 
+        $(function(){
+          $("#Header").load("CommonUse/Header.html"); 
+          $("#Footer").load("CommonUse/Footer.html");
+          $("#NavBar").load("CommonUse/NavBar.html");
+        });
+    </script> 
+</body>
+</html>

@@ -1,0 +1,27 @@
+<head>
+</head>
+<body>
+    
+    <!-- NAV BAR-->
+    <aside id="NavigationContainer">
+        <Nav id="NavBar" class="Navigation">
+            <a id="CloseIcon" onclick="CloseMenu()"><img src="Images/Icons/cross.png" alt=""></a>
+            <a href="Index.html"><img src="Images/Icons/home.png" alt=""> Home </a>
+            <a href="GetAQuote.html"><img src="Images/Icons/quote.png" alt="">Get a Quote</a>
+            <a href="CovidGolf.html"><img src="Images/Icons/golf.png" alt="">COVID Golf</a>
+            <a href="Gallery.html"><img src="Images/Icons/gallery.png" alt="">Gallery</a>
+            <a href="OnlineStore.html"><img src="Images/Icons/store.png" alt="">Online Store</a>
+            <a href="FAQ.html"><img src="Images/Icons/qmark.png" alt="">FAQs</a>
+            <a href="Contact.html"><img src="Images/Icons/contact.png" alt="">Contact</a>
+        </Nav>
+    </aside>
+    
+    <script>
+        function CloseMenu(){
+            var menu = document.getElementById("NavigationContainer");
+            menu.style.height = "0%";
+            document.body.style.overflow = "visible";
+        }
+    </script>
+
+</body>

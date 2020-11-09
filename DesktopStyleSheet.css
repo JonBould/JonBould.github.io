@@ -1,0 +1,446 @@
+
+@font-face{
+    font-size: 100%;
+    font-family: customFont; 
+    src: url(Fonts/MODENINE.TTF)
+}
+
+*{
+    font-family: customFont;
+    background-color: rgb(56, 56, 56);
+}
+
+#SiteContainer{
+    margin-left: 12%;
+}
+
+/* Text */
+h1{
+    color: white;
+    background-color: rgb(255, 58, 68);
+    font-size: 50px;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 0;
+    width: 100%;
+}
+
+h2{
+    color: white;
+    background-color: transparent;
+    font-size: xx-large;
+}
+
+h3{
+    color: white;
+    background-color: transparent;
+    font-size: x-large;
+}
+
+h4{
+    color: white;
+    background-color: transparent;
+    font-size: large;
+}
+
+h5{
+    color: white;
+    background-color: transparent;
+    font-size: small;
+}
+
+h6{
+    color: white;
+    background-color: transparent;
+    font-size: medium;
+    display: inline;
+}
+
+p{
+    color:  white;
+    background-color: transparent;
+    font-size: large ;
+}
+
+#importantText{
+    color:rgb(255, 58, 68);
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Images */
+.Icon{
+    width: 150px;
+    filter: grayscale(100);
+    background-color: transparent;
+}
+
+.MediumIcon{
+    width: 100px;
+    filter: brightness(0) invert(1);
+    background-color: transparent;
+    margin: auto;
+    text-align: center;
+}
+
+/* Navigation Bar */ /*background-image: linear-gradient(to right, rgb(10, 0, 0)90%, rgb(56,56,56));*/
+nav{
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* The navigation menu links */
+nav a{
+    margin: auto;
+    padding: 5% 0px 0% 0px;
+    height: 12%;
+    text-decoration: none;
+    text-align: center;
+    font-size: inherit;
+    color:  white;
+    background-color: black;
+    display: block;
+}
+nav a img{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: transparent;
+    width: 25%;
+    filter: brightness(0) invert(1);
+}
+/* When you mouse over the navigation links, change their color */
+nav a:hover {
+    /*background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(56,56,56)99%);*/
+    background-color: rgb(90, 90, 90);
+    transition: 0.5s;
+}
+#CloseIcon{
+    display: none;
+}
+
+/* Home */
+#Welcome{
+    background-image: url("Images/Background/background.gif");
+    background-size: cover;
+    margin-top: 10px;
+}
+#Welcome h4,h3{
+    color: rgb(150, 39, 45);
+}
+
+.infoBox{
+    padding: 1% 1% 1% 1%;
+    height: fit-content;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(90, 90, 90);
+}
+#ModelInfo{
+    background-color: rgb(255, 128, 128);
+}
+#MaterialInfo{
+    background-color: rgb(255, 58, 68);
+}
+#FinishInfo{
+    background-color: rgb(150, 39, 45);    
+}
+
+/* Get a Quote */
+#quoteForm{
+    width: auto;
+    margin: auto 10% auto 10%;
+}
+label{
+    font-size: xx-large;
+    color: white;
+    margin-bottom: 50px;
+}
+input{
+    font-size: x-large;
+    width: 45%;
+    min-width: 250px;
+    color: white;
+    background-color: rgb(255, 58, 68);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+}
+input:placeholder-shown{
+    background-color: rgb(255, 128, 128);
+}
+input:focus{
+    background-color: rgb(255, 58, 68);
+    
+}
+select{
+    font-size: x-large;
+    width: fit-content;
+    min-width: 250px;
+    color: white;
+    background-color: rgb(255, 58, 68);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+}
+select option{
+    background-color:rgb(255, 128, 128);
+    padding: 5px 5px 5px 5px;
+    border: none;
+}
+select:focus{
+    background-color: rgb(255, 58, 68);
+}
+#application , #finish{
+    max-width: fit-content;
+    min-width: 125px;
+}
+textarea{
+    font-size: large;
+    width: 90%;
+    min-width: 250px;
+    min-height: 100px;
+    color: white;
+    background-color: rgb(255, 58, 68);
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    resize: none;
+}
+textarea:placeholder-shown{
+    background-color: rgb(255, 128, 128);
+}
+textarea:focus{
+    background-color: rgb(255, 58, 68);
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.7)
+}
+#submitButton{
+    margin: auto;
+    color: white;
+    background-color: rgb(150, 39, 45);
+    width: 100%;
+    min-width: 200px;
+    height: 100px;
+    font-size: xx-large;
+}
+#submitButton:hover{
+    background-color: rgb(255, 58, 68);
+    cursor: pointer;
+}
+
+
+/* Golf */
+#golfVideo{
+    display: block;
+    margin:auto;
+    width: 100%;
+}
+
+#golfContainer {
+    width: 100%;
+    min-width: 1300px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#golfReturner{
+    width: 50%;
+    float: right;
+}
+#sideImages{
+    display: inline-block;
+    vertical-align: top;
+    min-width: 400px;
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+#golfMain{
+    width:65%;
+    min-width: 880px;
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Gallery */
+.Gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 5% 10px 5%;
+    height: 100%;
+}
+#galleryImage{
+    margin: auto;
+    height: 600px;
+    width: auto;
+}
+.GalleryThumbnails{
+    width: 95%;
+    margin:auto;
+    text-align: center;
+}
+.GalleryThumb{
+    height: 200px;
+    filter: opacity(.5);
+    margin: auto;
+}
+.GalleryThumb:hover{
+    filter: opacity(.9);
+    cursor: pointer;
+}
+
+
+/* Store */
+#store{
+    margin-top: 20px;
+}
+.StoreNotif{
+    text-align: center;
+    background-color: rgb(90, 90, 90);
+    margin: auto;
+    padding: 1% 0px 1% 0px;
+}
+
+/* FAQs */
+/* Buttons */
+.RevealButton{
+    width: 100%;
+    padding: 10px 20px 10px 20px ;
+    border: none;
+    border-bottom: 2px rgb(255, 58, 68) solid;
+    display: flex;
+    flex-direction: row;
+}
+.RevealButton p{
+    width: 90%;
+    text-align: center;
+    font-size: x-large;
+    margin: auto;
+    color: white;
+    float: left;
+}
+.RevealButton:hover{
+    background-color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+.ButtonIcon{
+    height: 30px;
+    width: 30px;
+    float: right;
+    background-color: transparent;
+    filter: brightness(0) invert(1);
+}
+
+
+/* Contact Us */
+#contactContainer {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 50px 5% 50px 5%;
+    width: 90%;
+}
+.ContactBlock{
+    width: 33%;
+    min-width: 400px;
+    text-align: center;
+    background: none;
+}
+.ContactBlock div{
+    background: none;
+    color: white;
+}
+.ContactIcon{
+    width: 100px;
+    background: none;
+    margin: auto;
+    margin-top: 30%;
+    text-align: center;
+}
+#mailBlock{
+    background-image: url(Images/Background/laptop.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#phoneBlock{
+    background-image: url(Images/Background/mobile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#facebookBlock{
+    background-image: url(Images/Background/Facebook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.linkText{
+    color: rgb(56, 56, 56);
+    background-color: transparent;
+    font-size: large;
+    margin: 20% 5% 10% 5%;
+    text-decoration: underline;
+}
+
+
+/* Header & footer */
+.banner{
+    width: 60%;
+    margin-left: 20%;
+}
+#MenuButton{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    margin: auto;
+}
+.smallLogo{
+    display: inline-block;
+    vertical-align: middle;
+    height: 75px;
+    width: 75px;
+}
+.footerText{
+    color: white;
+    background-color: transparent;
+    font-size: x-large;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*Social Bar */
+.socialBar{
+    vertical-align: middle;
+    display: inline-block;
+}
+.socialBar li{
+    display: inline-block;
+}
+.SmallIcon{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-device-width: 480px) {
+    nav {padding-top: 1px;}
+    nav a {font-size: small;}
+}
