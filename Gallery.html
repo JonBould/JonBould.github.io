@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+<body>
+    <title>Gallery - Simple Prints 3D</title>
+
+    <!-- NAV BAR-->
+    <aside>
+        <Nav id="NavBar" class="sideNav"></Nav>
+    </aside>
+
+    <!-- everything that isn't the navigation bar-->
+    <div id="SiteContainer">
+            <!-- Top Banner -->
+        <header id="Header"></header>
+
+        <h1 id="title">Gallery</h1>
+        <!-- Main Body -->
+            <!-- Full-width images with number and caption text -->
+            <div class="Gallery">
+                <img id="galleryImage" src="Images/Gallery/pokemonKeychain.jpg">
+            </div>
+            <div id="thumnails" class="GalleryThumbnails">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/BOI.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/GBC.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/pokemonKeychain.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/pokeonvor.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/Pikachu.png">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/Bulbasaur.png">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/Squirtle.png">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/Charmander.png">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/islandHead.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/deadpool.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/spiderman.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/sudo.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/groot.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/powerplant.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/bowl.jpg">
+                <img class="GalleryThumb" onclick="focusImage(this);" src="images/Gallery/vase.jpg">
+            </div>
+        <footer id="Footer"></footer>
+    </div>
+
+    <script> 
+        $(function(){
+          $("#Header").load("CommonUse/Header.html"); 
+          $("#Footer").load("CommonUse/Footer.html");
+          $("#NavBar").load("CommonUse/NavBar.html");
+        });
+
+        function focusImage(newImg){
+            var bigImage = document.getElementById("galleryImage");
+            bigImage.src = newImg.src;
+            document.getElementById("title").scrollIntoView();
+        }
+    </script>
+</body>
+</html>
