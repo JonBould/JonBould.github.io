@@ -113,6 +113,9 @@ p{
 #NavBar a:hover {
     background-color: rgba(255, 128, 128, 0.7);
 }
+#MenuLogo{
+    display: none;
+}
 
 /* Home */
 #Welcome{

@@ -5,14 +5,15 @@
     <!-- NAV BAR-->
     <aside id="NavigationContainer">
         <Nav id="NavBar" class="Navigation">
+            <img id="MenuLogo" src="Images/Logos/Banner.png">
             <a id="CloseIcon" onclick="CloseMenu()"><img src="Images/Icons/cross.png" alt=""></a>
-            <a href="index.html"><img src="Images/Icons/home.png" alt=""> Home </a>
-            <a href="GetAQuote.html"><img src="Images/Icons/quote.png" alt="">Get a Quote</a>
-            <a href="CovidGolf.html"><img src="Images/Icons/golf.png" alt="">COVID Golf</a>
-            <a href="Gallery.html"><img src="Images/Icons/gallery.png" alt="">Gallery</a>
-            <a href="OnlineStore.html"><img src="Images/Icons/store.png" alt="">Online Store</a>
-            <a href="FAQ.html"><img src="Images/Icons/qmark.png" alt="">FAQs</a>
-            <a href="Contact.html"><img src="Images/Icons/contact.png" alt="">Contact</a>
+            <a id="HomeNav" href="index.html"><img src="Images/Icons/home.png" alt=""> Home </a>
+            <a id="QuoteNav" href="GetAQuote.html"><img src="Images/Icons/quote.png" alt="">Get a Quote</a>
+            <a id="GolfNav" href="CovidGolf.html"><img src="Images/Icons/golf.png" alt="">COVID Golf</a>
+            <a id="GalleryNav" href="Gallery.html"><img src="Images/Icons/gallery.png" alt="">Gallery</a>
+            <a id="StoreNav" href="OnlineStore.html"><img src="Images/Icons/store.png" alt="">Online Store</a>
+            <a id="FAQNav" href="FAQ.html"><img src="Images/Icons/qmark.png" alt="">FAQs</a>
+            <a id="ContactNav" href="Contact.html"><img src="Images/Icons/contact.png" alt="">Contact</a>
         </Nav>
     </aside>
     
@@ -23,5 +24,15 @@
             document.body.style.overflow = "visible";
         }
     </script>
+
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).addClass('active');
+                }
+            });
+        });
+    </script
 
 </body>

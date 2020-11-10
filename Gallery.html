@@ -16,7 +16,6 @@
             <!-- Top Banner -->
         <header id="Header"></header>
 
-        <h1 id="title">Gallery</h1>
         <!-- Main Body -->
             <!-- Full-width images with number and caption text -->
             <div class="Gallery">
@@ -53,7 +52,8 @@
         function focusImage(newImg){
             var bigImage = document.getElementById("galleryImage");
             bigImage.src = newImg.src;
-            document.getElementById("title").scrollIntoView();
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
