@@ -131,7 +131,7 @@ nav a:hover {
     background-size: cover;
     margin-top: 10px;
 }
-#Welcome h4,h3{
+#Welcome *{
     color: rgb(150, 39, 45);
 }
 
@@ -274,6 +274,7 @@ textarea:focus{
     vertical-align: top;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 /* Gallery */
