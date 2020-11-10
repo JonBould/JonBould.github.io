@@ -16,7 +16,6 @@
             <!-- Top Banner -->
         <header id="Header"></header>
 
-        <h1>FAQs</h1>
         <!-- Main Body -->
         <button class="RevealButton" onclick="Reveal(howItWorks)"><p>What is it & How Does it Work? </p><img class="ButtonIcon" src="/Images/Icons/drop.png" alt=""></button>
         <div id="howItWorks" class="infoBox" style="display: none;">
@@ -78,7 +77,6 @@
         function Reveal(section){
             if (section.style.display === "none") {
                 section.style.display = "block";
-                section.scrollIntoView();
             } else {
                 section.style.display = "none";
             }

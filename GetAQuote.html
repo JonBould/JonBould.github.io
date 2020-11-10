@@ -17,35 +17,33 @@
     <div id="SiteContainer">
             <!-- Top Banner -->
         <header id="Header"></header>
-
-        <h1>Get A Quote</h1>
         <!-- Main Body -->
         <h3>Fill out the form & add your model file below. If you don't have a model, let us know what your idea is in the comments section</h3>
         <form id="quoteForm" action="https://getform.io/f/1f55c952-7698-4c34-9a0f-97c5df7648d0" method="POST" enctype="multipart/form-data">
-            <label for="fname">Name</label><br>
-            <input type="text" id="fname" name="fname" placeholder="First Name" required>
-            <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="Email" required><br>
-            <label for="phone">Phone Number</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
-            <label for="address">Address</label><br>
-            <input type="text" id="streetAdress" name="streetAdress" placeholder="Street Address" required><br>
-            <input type="text" id="streetAdress1" name="streetAdress1" placeholder="Street Address line 2" required><br>
-            <input type="text" id="city" name="city" placeholder="City" required>
-            <input type="text" id="county" name="county" placeholder="County" required><br>
-            <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
-            <input type="text" id="country" name="country" placeholder="Country" required><br>
-            <label for="material">Select Material</label><br>
-            <select id="material" name="material" onchange="ColourOption()" required>
+            <label for="First Name">Name</label><br>
+            <input type="text" id="fname" name="First Name" placeholder="First Name" required>
+            <input type="text" id="lname" name="Last Name" placeholder="Last Name" required><br>
+            <label for="Email">Email</label><br>
+            <input type="email" id="email" name="Email" placeholder="Email" required><br>
+            <label for="Phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="Phone" placeholder="Phone Number" required><br>
+            <label for="Address">Address</label><br>
+            <input type="text" id="streetAddress" name="Street Address" placeholder="Street Address" required><br>
+            <input type="text" id="streetAddress1" name="Street Address1" placeholder="Street Address line 2" required><br>
+            <input type="text" id="city" name="City" placeholder="City" required>
+            <input type="text" id="county" name="County" placeholder="County" required><br>
+            <input type="text" id="postcode" name="Postcode" placeholder="Postcode" required>
+            <input type="text" id="country" name="Country" placeholder="Country" required><br>
+            <label for="Material">Select Material</label><br>
+            <select id="material" name="Material" onchange="ColourOption()" required>
                 <option value="" disabled selected hidden>Select Material</option>
                 <option value="PLA">PLA</option>
                 <option value="PETG">PETG</option>
                 <option value="other">Other</option>
                 <option value="suggestionRequired">Suggestion Required</option>
             </select>
-            <label  id="colour" for="colourPETG" for="colourPLA">Colour</label>
-            <select id="colourPETG" name="colourPETG" placeholder="Colour">
+            <label  id="colour" for="ColourPETG" for="colourPLA">Colour</label>
+            <select id="colourPETG" name="ColourPETG" placeholder="Colour">
                 <option value="" disabled selected hidden>Select Colour</option>
                 <option value="black">Black</option>
                 <option value="white">White</option>
@@ -53,7 +51,7 @@
                 <option value="other">Other</option>
                 <option value="suggestionRequired">Suggestion Required</option>
             </select>
-            <select id="colourPLA" name="colourPLA">
+            <select id="colourPLA" name="ColourPLA">
                 <option value="" disabled selected hidden>Select Colour</option>
                 <option value="Black">Black</option>
                 <option value="White">White</option>
@@ -70,24 +68,24 @@
                 <option value="other">Other</option>
                 <option value="suggestionRequired">Suggestion Required</option>
             </select><br>
-            <label for="application">Select Application</label><br>
-            <select id="application" name="application" required>
+            <label for="Application">Select Application</label><br>
+            <select id="application" name="Application" required>
                 <option value="" disabled selected hidden>Select Application</option>
                 <option value="Display">Display</option>
                 <option value="Mechanical">Mechanical</option>
                 <option value="Functional">Functional</option>
                 <option value="other">Other</option>
             </select><br>
-            <label for="finish">Select Finish Quality</label><br>
-            <select id="finish" name="finish" required>
+            <label for="Finish">Select Finish Quality</label><br>
+            <select id="finish" name="Finish" required>
                 <option value="" disabled selected hidden>Select Finish</option>
                 <option value="High">High (Clean finish for display)</option>
                 <option value="Medium">Medium (Not bad, but not finest quality)</option>
                 <option value="Low">Low (Clean Look not required)</option>
                 <option value="suggestionRequired">Suggestion Required</option>
             </select><br>
-            <label for="comments">Any Comments</label><br>
-            <textarea id="comments" name="comments" placeholder="Any Comments"></textarea><br>
+            <label for="Comments">Any Comments</label><br>
+            <textarea id="comments" name="Comments" placeholder="Any Comments"></textarea><br>
             <label for="file">Attach Your File (max 5mb)</label><br>
             <input id="file" name= "file" type="file">
             <input type="hidden" id="captchaResponse" name="g-recaptcha-response">

@@ -11,17 +11,14 @@
 }
 
 #SiteContainer{
-    margin-left: 12%;
+    margin-top: 7%;
 }
 
 /* Text */
 h1{
     color: white;
-    background-color: rgb(255, 58, 68);
     font-size: 50px;
     text-align: center;
-    margin: 0 0 0 0;
-    padding: 5px 0 5px 0;
     width: 100%;
 }
 
@@ -83,29 +80,71 @@ p{
     text-align: center;
 }
 
+/* Header & footer */
+.banner{
+    display: none;
+}
+#MenuButton{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    margin: auto;
+}
+.smallLogo{
+    display: inline-block;
+    vertical-align: middle;
+    height: 75px;
+    width: 75px;
+}
+.footerText{
+    color: white;
+    background-color: transparent;
+    font-size: x-large;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*Social Bar */
+.socialBar{
+    vertical-align: middle;
+    display: inline-block;
+}
+.socialBar li{
+    display: inline-block;
+}
+.SmallIcon{
+    height: 50px;
+    width: 50px;
+}
+
 /* Navigation Bar */ /*background-image: linear-gradient(to right, rgb(10, 0, 0)90%, rgb(56,56,56));*/
 nav{
-    height: 100%;
-    width: 12%;
+    height: auto;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
     overflow-x: hidden;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px rgb(255, 58, 68) solid;
+    background-color: black;
 }
 /* The navigation menu links */
 nav a{
-    margin: auto;
-    padding: 5% 0px 0% 0px;
-    height: 12%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 15%;
     text-decoration: none;
     text-align: center;
     font-size: inherit;
     color:  white;
-    background-color: black;
     display: block;
+    background-color: transparent;
 }
 nav a img{
     display: block;
@@ -121,8 +160,17 @@ nav a:hover {
     background-color: rgb(90, 90, 90);
     transition: 0.5s;
 }
+nav .active {
+    background-color: rgb(255, 58, 68);
+}
 #CloseIcon{
     display: none;
+}
+#MenuLogo{
+    width: 20%;
+    margin: auto;
+    padding: auto;
+    background-color: transparent;
 }
 
 /* Home */
@@ -131,7 +179,7 @@ nav a:hover {
     background-size: cover;
     margin-top: 10px;
 }
-#Welcome h4,h3{
+#Welcome *{
     color: rgb(150, 39, 45);
 }
 
@@ -249,31 +297,28 @@ textarea:focus{
 
 #golfContainer {
     width: 100%;
-    min-width: 1300px;
+    display: flex;    
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
 }
 #golfReturner{
     width: 50%;
-    float: right;
+    vertical-align: top;
 }
 #sideImages{
-    display: inline-block;
-    vertical-align: top;
-    min-width: 400px;
-    width: 30%;
-    height: auto;
-    margin: auto;
+    display: inline-table;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
 }
 #golfMain{
     width:65%;
-    min-width: 880px;
     display: inline-block;
-    margin: auto;
     vertical-align: top;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 /* Gallery */
@@ -395,52 +440,4 @@ textarea:focus{
     font-size: large;
     margin: 20% 5% 10% 5%;
     text-decoration: underline;
-}
-
-
-/* Header & footer */
-.banner{
-    width: 60%;
-    margin-left: 20%;
-}
-#MenuButton{
-    display: none;
-}
-
-footer{
-    text-align: center;
-    margin: auto;
-}
-.smallLogo{
-    display: inline-block;
-    vertical-align: middle;
-    height: 75px;
-    width: 75px;
-}
-.footerText{
-    color: white;
-    background-color: transparent;
-    font-size: x-large;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-/*Social Bar */
-.socialBar{
-    vertical-align: middle;
-    display: inline-block;
-}
-.socialBar li{
-    display: inline-block;
-}
-.SmallIcon{
-    height: 50px;
-    width: 50px;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-device-width: 480px) {
-    nav {padding-top: 1px;}
-    nav a {font-size: small;}
 }
