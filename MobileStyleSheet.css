@@ -155,7 +155,7 @@ label{
 input{
     font-size: large;
     width: 90%;
-    color: white;
+    color: black;
     background-color: rgb(255, 58, 68);
     margin: 1% 4% 1% 4%;
     border: none;
@@ -171,7 +171,7 @@ input:focus{
 select{
     font-size: x-large;
     width: 90%;
-    color: white;
+    color: black;
     background-color: rgb(255, 58, 68);
     margin: 1% 4% 1% 4%;
     padding: 5px 5px 5px 5px;
@@ -190,7 +190,7 @@ textarea{
     width: 90%;
     min-width: 250px;
     min-height: 100px;
-    color: white;
+    color: black;
     background-color: rgb(255, 58, 68);
     padding: 5px 5px 5px 5px;
     margin: 1% 4% 1% 4%;;
