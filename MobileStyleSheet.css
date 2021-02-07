@@ -261,6 +261,7 @@ textarea:focus{
 #galleryImage{
     margin: auto;
     width: 100%;
+    height: 100%;
 }
 .GalleryThumbnails{
     width: 95%;
