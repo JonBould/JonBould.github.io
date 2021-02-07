@@ -331,7 +331,7 @@ textarea:focus{
 }
 #galleryImage{
     margin: auto;
-    height: 600px;
+    height: 30em;
     width: auto;
 }
 .GalleryThumbnails{
