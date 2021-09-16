@@ -397,13 +397,13 @@ textarea:focus{
     height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     margin: 50px 5% 50px 5%;
     width: 90%;
 }
 .ContactBlock{
-    width: 33%;
+    width: 40%;
     min-width: 400px;
     text-align: center;
     background: none;
